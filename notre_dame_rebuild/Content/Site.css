@@ -1,7 +1,11 @@
-﻿/*---------- HEADER ----------*/
+﻿html, body{
+    height: 100%; /*For Sticky Footer*/
+}
 
-#header_container {
-    margin: 0 auto;
+/*---------- HEADER ----------*/
+
+#container {
+    max-width: 100%;
 }
 
 #header {
@@ -49,6 +53,7 @@
   	z-index: 101;
 	background: #f9f9f9;
     text-align: left;
+    border-bottom: 2px solid #f7900f;
 }
 
 #navigation ul li ul li {
@@ -68,4 +73,49 @@
 	display: block;
   	opacity: 1;
   	visibility: visible;
+}
+
+/*---------- BODY ----------*/
+
+/*For Sticky Footer*/
+#main {
+    min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -200px;
+}
+
+/*---------- FOOTER ----------*/
+
+.push {
+    height: 200px; /*For Sticky Footer*/
+}
+
+#footer_container {
+    max-width: 100%;
+}
+
+#footer {
+    margin: 0 auto;
+    width: 1024px;
+    height: 200px;
+    max-width: 100%;
+    background-color: #e5e7e9;
+}
+
+#footer_links{
+    float: left;
+}
+
+#footer_links ul{
+    padding: 15px;
+}
+
+#footer_links ul li a{
+    text-decoration: none;
+    color: #333;
+}
+
+#footer_img {
+    float: right;
 }

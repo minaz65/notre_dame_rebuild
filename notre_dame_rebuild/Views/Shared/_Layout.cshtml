@@ -17,12 +17,14 @@
         <header id="header">
 
             <div id="logo">
-                <img src="~/Content/images/logo.png" title="Notre Dame Logo" alt="Notre Dame Logo" />
+                <img src="~/Content/images/logo.png" title="Notre Dame" alt="Notre Dame Logo" />
             </div>
 
         </header>
 
     </div>
+
+@* ----- NAVIGATION -----*@
 
     <nav id="navigation">
         <ul>
@@ -68,13 +70,34 @@
         @Scripts.Render("~/bundles/jquery")
         @RenderSection("scripts", required: false)
 
+        <div class="push">
+            @*For Sticky Footer*@
+        </div>
+
     </section>
 
 @* ----- FOOTER -----*@
 
-    <footer id="footer">
+    <div id="footer_container">
 
-    </footer>
+        <footer id="footer">
+
+            <div id="footer_links">
+                <ul>
+                    <li><a href="#">Accessibility</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <div id="footer_img">
+                <img src="~/Content/images/hearstimg.png" title="Hearst" alt="Hearst Image" />
+                <img src="~/Content/images/collegeimg.png" title="College" alt="College Image" />
+                <img src="~/Content/images/hospitalimg.png" title="Notre Dame Hospital" alt="Notre Dame Hospital Image" />
+            </div>
+
+        </footer>
+
+    </div>
 
 </body>
 </html>
