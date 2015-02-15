@@ -1,6 +1,70 @@
-﻿#header {
-    background-color: #fff;
+﻿/*---------- HEADER ----------*/
+
+#header_container {
+    margin: 0 auto;
+}
+
+#header {
+    margin: 0 auto;
     width: 1024px;
     max-width: 100%;
+    background-color: #fff;
+}
+
+/*---------- MAIN NAVIGATION ----------*/
+
+#navigation {
     margin: 0 auto;
+    max-width: 100%;
+}
+
+#navigation ul {
+    text-align: center;
+    background-color: #019ab8;
+    padding: 20px;
+}
+
+#navigation ul li{
+    position: relative;
+    list-style: none;
+    display: inline;
+	cursor: pointer;
+}
+
+#navigation ul li a{
+    text-decoration: none;
+    padding: 20px;
+    color: #fff;
+}
+
+#navigation ul li ul {
+   	position: absolute;
+  	top: 30px;
+  	left: 0;
+  	width: 200px;
+  	display: none;
+  	opacity: 0;
+  	visibility: hidden;
+  	z-index: 101;
+	background: #f9f9f9;
+    text-align: left;
+}
+
+#navigation ul li ul li {
+ 	padding: 20px 0 20px 0;
+}
+
+#navigation ul li ul li a{
+    color: #333;
+    padding: 0px;
+}
+
+#navigation ul li ul li a:hover{
+    color: #808080;
+}
+
+#navigation ul li:hover ul {
+	display: block;
+  	opacity: 1;
+  	visibility: visible;
 }
