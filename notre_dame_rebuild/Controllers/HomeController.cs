@@ -6,10 +6,8 @@ using System.Web.Mvc;
 
 namespace notre_dame_rebuild.Controllers
 {
-    public class TestController : Controller
+    public class HomeController : Controller
     {
-        //
-        // GET: /Test/
 
         public ActionResult Index()
         {
