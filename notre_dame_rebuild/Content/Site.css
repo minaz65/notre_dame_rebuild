@@ -29,6 +29,7 @@
     list-style: none;
     display: inline;
 	cursor: pointer;
+    padding: 20px 0 20px 0;
 }
 
 #navigation ul li a{
@@ -39,7 +40,7 @@
 
 #navigation ul li ul {
    	position: absolute;
-  	top: 30px;
+  	top: 57px;
   	left: 0;
   	width: 200px;
   	display: none;
